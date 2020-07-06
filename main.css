@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #051d13;
+  background-image: url(./assest/Background.jpg);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5vh;
+  color: rgba(255, 255, 255, 0.75);
+  transition: ease-in 0.25s;
+  opacity: 0;
+}
+.span {
+  color: rgba(255, 255, 255, 0.973);
+}
+.logo:hover {
+  color: white;
+}
+ul {
+  display: flex;
+  left: 50%;
+  width: 80%;
+  justify-content: space-around;
+  list-style: none;
+  opacity: 0;
+}
+
+li a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: ease-in 0.25s;
+  font-size: 1.7vh;
+}
+li a:hover {
+  color: white;
+}
+
+.Main-title {
+  position: absolute;
+  color: white;
+  top: 35%;
+  left: 20%;
+  transform: translate(-20%, -35%);
+  font-size: 9.5vh;
+  opacity: 0;
+}
+.para {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.75);
+  top: 55%;
+  left: 20%;
+  transform: translate(-20%, -55%);
+  font-size: 2.5vh;
+  width: 40%;
+  transition: ease-in 0.25s;
+}
+
+.para:hover {
+  color: white;
+}
+
+.container {
+  display: block;
+  padding: 20vh 0.3vh;
+}
+.card {
+  box-shadow: 0 10px 20px 0 rgba(183, 216, 188, 0.1);
+  transition: 0.3s;
+  position: absolute;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.13);
+  border: 5px solid rgba(255, 255, 255, 0.904);
+  opacity: 0;
+  top: 45%;
+  left: 85%;
+  border-radius: 20px;
+  transform: translate(-85%, -45%);
+}
+.icon {
+  position: absolute;
+  height: 70px;
+  z-index: 11111;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  transition: ease-in-out 0.25s;
+  opacity: 80%;
+}
+.icon:hover {
+  height: 75px;
+  opacity: 100%;
+}
+.title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 3.5vh;
+  color: rgb(234, 238, 236);
+  text-align: center;
+  width: 100%;
+}
+.temp,
+.weather,
+.humidity,
+.feelslike {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 5px;
+  z-index: 99999;
+  font-size: 3vh;
+  transition: ease-in 0.25s;
+}
+.temp:hover,
+.weather:hover,
+.humidity:hover,
+.feelslike:hover {
+  font-size: 110%;
+  color: white;
+}
+@media only screen and (max-width: 1200px) {
+  .Main-title {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Main-title {
+    display: flex;
+    position: absolute;
+    width: 75%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 8.5vh;
+  }
+  .card {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .container {
+    display: block;
+    padding: 15vh 0.3vh;
+  }
+  .Main-title {
+    display: flex;
+    position: absolute;
+    width: 80%;
+    top: 15%;
+    left: 25%;
+    transform: translate(-25%, -15%);
+    font-size: 8vh;
+  }
+  .card {
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .Main-title {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transform: translate(-25%, -15%);
+    font-size: 8vh;
+  }
+  .card {
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+  .icon {
+    height: 60px;
+  }
+  .title {
+    top: 5%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .card {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+  }
+  .Main-title {
+    font-size: 7.5vh;
+    width: 100%;
+  }
+}
