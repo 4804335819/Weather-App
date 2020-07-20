@@ -1,5 +1,5 @@
 $.getJSON(
-  "http://api.openweathermap.org/data/2.5/weather?q=Orlando&units=imperial&APPID=1de4249a64d3d7fcdf4025286bd58719",
+  "https://api.openweathermap.org/data/2.5/weather?q=Orlando&units=imperial&APPID=1de4249a64d3d7fcdf4025286bd58719",
   function (data) {
     console.log(data);
 
